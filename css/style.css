@@ -35,4 +35,9 @@
     position: absolute;
     bottom: 0;
     left: 78px;
+    display: none;
+}
+
+.product:hover .heart {
+    display: block;
 }
