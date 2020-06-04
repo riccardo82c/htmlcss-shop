@@ -6,7 +6,6 @@
 
 .container {
     width: 680px;
-
     margin: 50px auto;
     background-color: #181818;
     padding: 25px;
@@ -15,21 +14,25 @@
 
 .row {
     width: 100%;
-    height: 250px;
+    height: 280px;
     background-color: lightgrey;
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
 }
 
-.product {
-    width: 200px;
-    height: 230px;
-    background-color: white;
-    display: inline-block;
-    position: relative;
-    border: 4px solid rgba(0, 0, 0, 0);
-    border-radius: 10px;
+
+
+
+.discount {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: rgba(52, 156, 90, 0.79);
+    color: white;
+
 }
 
 .heart {
@@ -44,12 +47,25 @@
     display: none;
 }
 
+.product {
+    width: 200px;
+    height: 245px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    border: 6px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+
+}
+
+
 .product:hover .heart {
     display: block;
 }
 
 .product:hover {
-    border: 4px solid rgb(255, 0, 13);
+    border: 6px solid rgb(255, 0, 13);
+    border-style: inset;
 }
 
 .product{
