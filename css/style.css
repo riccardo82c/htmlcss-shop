@@ -5,8 +5,8 @@
 }
 
 .container {
-    width: 800px;
-    height: 600px;
+    width: 680px;
+
     margin: 50px auto;
     background-color: grey;
     padding: 25px;
@@ -17,12 +17,12 @@
     height: 250px;
     background-color: lightgrey;
     border: 1px solid black;
-    margin-top: 25px;
-
+    padding: 10px;
 }
 
 .product {
     width: 200px;
-    height: 250px;
+    height: 230px;
     background-color: red;
+    display: inline-block;
 }
