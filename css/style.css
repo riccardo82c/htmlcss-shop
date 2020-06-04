@@ -1,29 +1,37 @@
+/* reset degli attributi */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: cornsilk;
+}
+
+/* container totale centrato */
 .container {
-    width: 680px;
+    width: 710px;
     margin: 50px auto;
-    background-color: #181818;
+    background-color: #125388;
     padding: 25px;
     border-radius: 10px;
 }
 
+/* le due righe */
 .row {
     width: 100%;
-    height: 280px;
-    background-color: lightgrey;
+    height: 268px;
+    background-color: rgb(237, 170, 11);
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
 }
 
-
-
-
+/* sconto in alto a dx sui prodotti */
 .discount {
     position: absolute;
     top: 5px;
@@ -32,21 +40,15 @@
     border-radius: 5px;
     background-color: rgba(52, 156, 90, 0.79);
     color: white;
-
 }
 
-.heart {
-    /* width: 50px;
-    height: 50px;
-    background-color: white; */
-    font-size: 30px;
-    color: red;
-    position: absolute;
-    bottom: 0;
-    left: 90px;
-    display: none;
+/* sconto differente sfondo rosso */
+.discount_special {
+    background-color: rgba(156, 58, 52, 0.79);
 }
 
+/* ogni singolo prodotto inline-block */
+/* bordo è trasparente */
 .product {
     width: 200px;
     height: 245px;
@@ -55,43 +57,48 @@
     position: relative;
     border: 6px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
-
-}
-
-
-.product:hover .heart {
-    display: block;
-}
-
-.product:hover {
-    border: 6px solid rgb(255, 0, 13);
-    border-style: inset;
-}
-
-.product{
+    margin: 0 5px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.product1{
-    background-image: url("https://s1.thcdn.com/productimg/1600/1600/12128462-8904692461979723.jpg");
+/* cuoricino in mezzo al prodotto (display: none) */
+.heart {
+    font-size: 40px;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 82px;
+    display: none;
+}
 
+/* hover sul prodotto -> cuoricino display: block */
+.product:hover .heart {
+    display: block;
+}
+
+/* hover sul prodotto -> compaiono i bordi*/
+.product:hover {
+    border: 6px solid #125388;
+    border-style: inset;
+}
+
+/* immagine di sfondo di ogni prodotto */
+.product1 {
+    background-image: url("https://s1.thcdn.com/productimg/1600/1600/12128462-8904692461979723.jpg");
 }
 
 .product2 {
     background-image: url("https://s1.thcdn.com//productimg/1600/1600/12219162-7904758766591293.jpg");
-
 }
 
 .product3 {
     background-image: url("https://s1.thcdn.com//productimg/1600/1600/12386399-1884768415001168.png");
-
 }
 
 .product4 {
     background-image: url("https://s1.thcdn.com//productimg/1600/1600/12275551-2384758767059263.jpg");
-
 }
 
 .product5 {
@@ -100,4 +107,12 @@
 
 .product6 {
     background-image: url("https://s1.thcdn.com//productimg/1600/1600/12386403-1734768414600902.png");
+}
+
+
+/* stilyng del footer*/
+footer {
+    text-align: right;
+    color: cornsilk;
+    margin-top: 15px;
 }
